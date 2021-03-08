@@ -6,7 +6,7 @@
   <link href="https://duke-alt.github.io/atom.xml" rel="self"/>
   
   <link href="https://duke-alt.github.io/"/>
-  <updated>2021-03-08T03:30:39.209Z</updated>
+  <updated>2021-03-08T09:09:40.011Z</updated>
   <id>https://duke-alt.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MySql的安装</title>
+    <link href="https://duke-alt.github.io/2021/03/08/mysql-de-an-zhuang/"/>
+    <id>https://duke-alt.github.io/2021/03/08/mysql-de-an-zhuang/</id>
+    <published>2021-03-08T08:51:28.000Z</published>
+    <updated>2021-03-08T09:09:40.011Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、MYSQL的安装&quot;&gt;&lt;a href=&quot;#一、MYSQL的安装&quot; class=&quot;headerlink&quot; title=&quot;一、MYSQL的安装&quot;&gt;&lt;/a&gt;一、MYSQL的安装&lt;/h3&gt;&lt;h4</summary>
+        
+      
+    
+    
+    
+    <category term="Mysql" scheme="https://duke-alt.github.io/categories/Mysql/"/>
+    
+    
+    <category term="Mysql" scheme="https://duke-alt.github.io/tags/Mysql/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
