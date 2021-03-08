@@ -4,19 +4,6 @@
   
     
     <entry>
-      <title></title>
-      <link href="2021/03/08/jia-kuai-maven-de-gou-jian/"/>
-      <url>2021/03/08/jia-kuai-maven-de-gou-jian/</url>
-      
-        <content type="html"><![CDATA[<p>每次创建项目时， IDEA 要使用插件进行创建，这些插件当你创建新的项目时，它每次都会去中央仓库下载，这样<br>使得创建比较慢。应该创建时，让它找本地仓库中的插件进行创建项目。</p><p>解决方式：<br>在 IDEA 的 Settings 窗口的 Build, Execution, Deployment &gt; Build Tools &gt; Maven &gt; Runner 中对 VM Option 设置<br>为 <strong>-DarchetypeCatalog=internal</strong></p><p><img src="/2021/03/08/jia-kuai-maven-de-gou-jian/It`s_Me\imags\idea\排开\加快maven构建.png"></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Hexo+Gitee博客</title>
       <link href="2021/03/08/hexo-gitee-bo-ke/"/>
       <url>2021/03/08/hexo-gitee-bo-ke/</url>
@@ -73,6 +60,31 @@
     
     
     <entry>
+      <title>多个文件排开</title>
+      <link href="2021/03/08/duo-ge-wen-jian-yi-yi-pai-kai-bu-hui-zhe-die/"/>
+      <url>2021/03/08/duo-ge-wen-jian-yi-yi-pai-kai-bu-hui-zhe-die/</url>
+      
+        <content type="html"><![CDATA[<p>有时候要是打开多个文件，要么都显示在一行，要么因为空间不足，就给省略显示，这样看着，或者点着，都不是很方便<br>IntelliJ IDEA 这个编辑器就提供了应对办法，要是知道怎么设置，那是最好，不知道的可以参考如下图的修改：<br>1，修改上限值，可以最多显示30个tabs，<br>2，多行显示，不会拥挤在一行，或者干脆就收缩起来。</p><p>具体显示效果如下：</p><p><img src="/2021/03/08/duo-ge-wen-jian-yi-yi-pai-kai-bu-hui-zhe-die/1.png" alt="1"></p><p><img src="/2021/03/08/duo-ge-wen-jian-yi-yi-pai-kai-bu-hui-zhe-die/2.png" alt="2"></p><p><img src="/2021/03/08/duo-ge-wen-jian-yi-yi-pai-kai-bu-hui-zhe-die/3.png" alt="3"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> IDEA </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> IDEA </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>MySql的安装</title>
       <link href="2021/03/08/mysql-de-an-zhuang/"/>
       <url>2021/03/08/mysql-de-an-zhuang/</url>
@@ -98,16 +110,18 @@
     
     
     <entry>
-      <title>多个文件排开</title>
-      <link href="2021/03/08/duo-ge-wen-jian-yi-yi-pai-kai-bu-hui-zhe-die/"/>
-      <url>2021/03/08/duo-ge-wen-jian-yi-yi-pai-kai-bu-hui-zhe-die/</url>
+      <title>加快maven构建</title>
+      <link href="2021/03/08/jia-kuai-maven-de-gou-jian/"/>
+      <url>2021/03/08/jia-kuai-maven-de-gou-jian/</url>
       
-        <content type="html"><![CDATA[<p>有时候要是打开多个文件，要么都显示在一行，要么因为空间不足，就给省略显示，这样看着，或者点着，都不是很方便<br>IntelliJ IDEA 这个编辑器就提供了应对办法，要是知道怎么设置，那是最好，不知道的可以参考如下图的修改：<br>1，修改上限值，可以最多显示30个tabs，<br>2，多行显示，不会拥挤在一行，或者干脆就收缩起来。</p><p>具体显示效果如下：</p><p><img src="/2021/03/08/duo-ge-wen-jian-yi-yi-pai-kai-bu-hui-zhe-die/1.png" alt="1"></p><p><img src="/2021/03/08/duo-ge-wen-jian-yi-yi-pai-kai-bu-hui-zhe-die/2.png" alt="2"></p><p><img src="/2021/03/08/duo-ge-wen-jian-yi-yi-pai-kai-bu-hui-zhe-die/3.png" alt="3"></p>]]></content>
+        <content type="html"><![CDATA[<p>每次创建项目时， IDEA 要使用插件进行创建，这些插件当你创建新的项目时，它每次都会去中央仓库下载，这样<br>使得创建比较慢。应该创建时，让它找本地仓库中的插件进行创建项目。</p><p>解决方式：<br>在 IDEA 的 Settings 窗口的 Build, Execution, Deployment &gt; Build Tools &gt; Maven &gt; Runner 中对 VM Option 设置<br>为 <strong>-DarchetypeCatalog=internal</strong></p><p><img src="/2021/03/08/jia-kuai-maven-de-gou-jian/%E5%8A%A0%E5%BF%ABmaven%E6%9E%84%E5%BB%BA.png" alt="加快maven构建"></p>]]></content>
       
       
       <categories>
           
           <category> IDEA </category>
+          
+          <category> maven </category>
           
       </categories>
       
@@ -115,6 +129,8 @@
         <tags>
             
             <tag> IDEA </tag>
+            
+            <tag> maven </tag>
             
         </tags>
       
