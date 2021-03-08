@@ -6,7 +6,7 @@
   <link href="https://duke-alt.github.io/atom.xml" rel="self"/>
   
   <link href="https://duke-alt.github.io/"/>
-  <updated>2021-03-08T10:21:11.056Z</updated>
+  <updated>2021-03-02T07:50:40.173Z</updated>
   <id>https://duke-alt.github.io/</id>
   
   <author>
@@ -18,17 +18,18 @@
   
   <entry>
     <title></title>
-    <link href="https://duke-alt.github.io/2021/03/08/duo-ge-wen-jian-yi-yi-pai-kai-bu-hui-zhe-die/"/>
-    <id>https://duke-alt.github.io/2021/03/08/duo-ge-wen-jian-yi-yi-pai-kai-bu-hui-zhe-die/</id>
-    <published>2021-03-08T10:20:11.393Z</published>
-    <updated>2021-03-08T10:21:11.056Z</updated>
+    <link href="https://duke-alt.github.io/2021/03/08/jia-kuai-maven-de-gou-jian/"/>
+    <id>https://duke-alt.github.io/2021/03/08/jia-kuai-maven-de-gou-jian/</id>
+    <published>2021-03-08T10:22:28.911Z</published>
+    <updated>2021-03-02T07:50:40.173Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;有时候要是打开多个文件，要么都显示在一行，要么因为空间不足，就给省略显示，这样看着，或者点着，都不是很方便&lt;br&gt;IntelliJ IDEA</summary>
+    <summary type="html">&lt;p&gt;每次创建项目时， IDEA 要使用插件进行创建，这些插件当你创建新的项目时，它每次都会去中央仓库下载，这样&lt;br&gt;使得创建比较慢。应该创建时，让它找本地仓库中的插件进行创建项目。&lt;/p&gt;
+&lt;p&gt;解决方式：&lt;br&gt;在 IDEA 的 Settings 窗口的 Build,</summary>
         
       
     
@@ -65,31 +66,6 @@
   </entry>
   
   <entry>
-    <title>MySql的安装</title>
-    <link href="https://duke-alt.github.io/2021/03/08/mysql-de-an-zhuang/"/>
-    <id>https://duke-alt.github.io/2021/03/08/mysql-de-an-zhuang/</id>
-    <published>2021-03-08T08:51:28.000Z</published>
-    <updated>2021-03-08T09:09:40.011Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、MYSQL的安装&quot;&gt;&lt;a href=&quot;#一、MYSQL的安装&quot; class=&quot;headerlink&quot; title=&quot;一、MYSQL的安装&quot;&gt;&lt;/a&gt;一、MYSQL的安装&lt;/h3&gt;&lt;h4</summary>
-        
-      
-    
-    
-    
-    <category term="Mysql" scheme="https://duke-alt.github.io/categories/Mysql/"/>
-    
-    
-    <category term="Mysql" scheme="https://duke-alt.github.io/tags/Mysql/"/>
-    
-  </entry>
-  
-  <entry>
     <title>IDEA实现序列化接口Serializable自动生成serialVersionUID</title>
     <link href="https://duke-alt.github.io/2021/03/08/idea-shi-xian-xu-lie-hua-jie-kou-serializable-zi-dong-sheng-cheng-serialversionuid/"/>
     <id>https://duke-alt.github.io/2021/03/08/idea-shi-xian-xu-lie-hua-jie-kou-serializable-zi-dong-sheng-cheng-serialversionuid/</id>
@@ -116,6 +92,56 @@
     <category term="IDEA" scheme="https://duke-alt.github.io/tags/IDEA/"/>
     
     <category term="Java" scheme="https://duke-alt.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySql的安装</title>
+    <link href="https://duke-alt.github.io/2021/03/08/mysql-de-an-zhuang/"/>
+    <id>https://duke-alt.github.io/2021/03/08/mysql-de-an-zhuang/</id>
+    <published>2021-03-08T08:51:28.000Z</published>
+    <updated>2021-03-08T09:09:40.011Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、MYSQL的安装&quot;&gt;&lt;a href=&quot;#一、MYSQL的安装&quot; class=&quot;headerlink&quot; title=&quot;一、MYSQL的安装&quot;&gt;&lt;/a&gt;一、MYSQL的安装&lt;/h3&gt;&lt;h4</summary>
+        
+      
+    
+    
+    
+    <category term="Mysql" scheme="https://duke-alt.github.io/categories/Mysql/"/>
+    
+    
+    <category term="Mysql" scheme="https://duke-alt.github.io/tags/Mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>多个文件排开</title>
+    <link href="https://duke-alt.github.io/2021/03/08/duo-ge-wen-jian-yi-yi-pai-kai-bu-hui-zhe-die/"/>
+    <id>https://duke-alt.github.io/2021/03/08/duo-ge-wen-jian-yi-yi-pai-kai-bu-hui-zhe-die/</id>
+    <published>2021-03-08T08:51:28.000Z</published>
+    <updated>2021-03-08T10:23:55.426Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;有时候要是打开多个文件，要么都显示在一行，要么因为空间不足，就给省略显示，这样看着，或者点着，都不是很方便&lt;br&gt;IntelliJ IDEA</summary>
+        
+      
+    
+    
+    
+    <category term="IDEA" scheme="https://duke-alt.github.io/categories/IDEA/"/>
+    
+    
+    <category term="IDEA" scheme="https://duke-alt.github.io/tags/IDEA/"/>
     
   </entry>
   
