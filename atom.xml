@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>地震</title>
+  <title>憨憨的二安</title>
   
   <subtitle>Duke</subtitle>
   <link href="https://duke-alt.github.io/atom.xml" rel="self"/>
@@ -44,31 +44,6 @@
   </entry>
   
   <entry>
-    <title>MySql的安装</title>
-    <link href="https://duke-alt.github.io/2021/03/08/mysql-de-an-zhuang/"/>
-    <id>https://duke-alt.github.io/2021/03/08/mysql-de-an-zhuang/</id>
-    <published>2021-03-08T08:51:28.000Z</published>
-    <updated>2021-03-08T09:09:40.011Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、MYSQL的安装&quot;&gt;&lt;a href=&quot;#一、MYSQL的安装&quot; class=&quot;headerlink&quot; title=&quot;一、MYSQL的安装&quot;&gt;&lt;/a&gt;一、MYSQL的安装&lt;/h3&gt;&lt;h4</summary>
-        
-      
-    
-    
-    
-    <category term="Mysql" scheme="https://duke-alt.github.io/categories/Mysql/"/>
-    
-    
-    <category term="Mysql" scheme="https://duke-alt.github.io/tags/Mysql/"/>
-    
-  </entry>
-  
-  <entry>
     <title>IDEA实现序列化接口Serializable自动生成serialVersionUID</title>
     <link href="https://duke-alt.github.io/2021/03/08/idea-shi-xian-xu-lie-hua-jie-kou-serializable-zi-dong-sheng-cheng-serialversionuid/"/>
     <id>https://duke-alt.github.io/2021/03/08/idea-shi-xian-xu-lie-hua-jie-kou-serializable-zi-dong-sheng-cheng-serialversionuid/</id>
@@ -95,6 +70,31 @@
     <category term="IDEA" scheme="https://duke-alt.github.io/tags/IDEA/"/>
     
     <category term="Java" scheme="https://duke-alt.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySql的安装</title>
+    <link href="https://duke-alt.github.io/2021/03/08/mysql-de-an-zhuang/"/>
+    <id>https://duke-alt.github.io/2021/03/08/mysql-de-an-zhuang/</id>
+    <published>2021-03-08T08:51:28.000Z</published>
+    <updated>2021-03-08T09:09:40.011Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、MYSQL的安装&quot;&gt;&lt;a href=&quot;#一、MYSQL的安装&quot; class=&quot;headerlink&quot; title=&quot;一、MYSQL的安装&quot;&gt;&lt;/a&gt;一、MYSQL的安装&lt;/h3&gt;&lt;h4</summary>
+        
+      
+    
+    
+    
+    <category term="Mysql" scheme="https://duke-alt.github.io/categories/Mysql/"/>
+    
+    
+    <category term="Mysql" scheme="https://duke-alt.github.io/tags/Mysql/"/>
     
   </entry>
   
