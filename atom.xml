@@ -74,31 +74,6 @@
   </entry>
   
   <entry>
-    <title>多个文件排开</title>
-    <link href="https://duke-alt.github.io/2021/03/08/duo-ge-wen-jian-yi-yi-pai-kai-bu-hui-zhe-die/"/>
-    <id>https://duke-alt.github.io/2021/03/08/duo-ge-wen-jian-yi-yi-pai-kai-bu-hui-zhe-die/</id>
-    <published>2021-03-08T08:51:28.000Z</published>
-    <updated>2021-03-08T10:23:55.426Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;有时候要是打开多个文件，要么都显示在一行，要么因为空间不足，就给省略显示，这样看着，或者点着，都不是很方便&lt;br&gt;IntelliJ IDEA</summary>
-        
-      
-    
-    
-    
-    <category term="IDEA" scheme="https://duke-alt.github.io/categories/IDEA/"/>
-    
-    
-    <category term="IDEA" scheme="https://duke-alt.github.io/tags/IDEA/"/>
-    
-  </entry>
-  
-  <entry>
     <title>MySql的安装</title>
     <link href="https://duke-alt.github.io/2021/03/08/mysql-de-an-zhuang/"/>
     <id>https://duke-alt.github.io/2021/03/08/mysql-de-an-zhuang/</id>
@@ -124,11 +99,11 @@
   </entry>
   
   <entry>
-    <title>加快maven构建</title>
+    <title>加快maven的构建</title>
     <link href="https://duke-alt.github.io/2021/03/08/jia-kuai-maven-de-gou-jian/"/>
     <id>https://duke-alt.github.io/2021/03/08/jia-kuai-maven-de-gou-jian/</id>
     <published>2021-03-08T08:51:28.000Z</published>
-    <updated>2021-03-08T10:26:48.393Z</updated>
+    <updated>2021-03-08T10:28:01.130Z</updated>
     
     
       
@@ -150,6 +125,31 @@
     <category term="IDEA" scheme="https://duke-alt.github.io/tags/IDEA/"/>
     
     <category term="maven" scheme="https://duke-alt.github.io/tags/maven/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>多个文件排开</title>
+    <link href="https://duke-alt.github.io/2021/03/08/duo-ge-wen-jian-yi-yi-pai-kai-bu-hui-zhe-die/"/>
+    <id>https://duke-alt.github.io/2021/03/08/duo-ge-wen-jian-yi-yi-pai-kai-bu-hui-zhe-die/</id>
+    <published>2021-03-08T08:51:28.000Z</published>
+    <updated>2021-03-08T10:23:55.426Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;有时候要是打开多个文件，要么都显示在一行，要么因为空间不足，就给省略显示，这样看着，或者点着，都不是很方便&lt;br&gt;IntelliJ IDEA</summary>
+        
+      
+    
+    
+    
+    <category term="IDEA" scheme="https://duke-alt.github.io/categories/IDEA/"/>
+    
+    
+    <category term="IDEA" scheme="https://duke-alt.github.io/tags/IDEA/"/>
     
   </entry>
   
