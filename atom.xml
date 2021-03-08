@@ -6,7 +6,7 @@
   <link href="https://duke-alt.github.io/atom.xml" rel="self"/>
   
   <link href="https://duke-alt.github.io/"/>
-  <updated>2021-03-08T09:21:46.964Z</updated>
+  <updated>2021-03-08T09:28:24.827Z</updated>
   <id>https://duke-alt.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://duke-alt.github.io/2021/03/08/hexo-gitee-bo-ke/"/>
     <id>https://duke-alt.github.io/2021/03/08/hexo-gitee-bo-ke/</id>
     <published>2021-03-08T08:51:28.000Z</published>
-    <updated>2021-03-08T09:21:46.964Z</updated>
+    <updated>2021-03-08T09:28:24.827Z</updated>
     
     
       
@@ -37,7 +37,9 @@
     <category term="Hexo" scheme="https://duke-alt.github.io/categories/Hexo/"/>
     
     
-    <category term="Hexo,Gitee" scheme="https://duke-alt.github.io/tags/Hexo-Gitee/"/>
+    <category term="Hexo" scheme="https://duke-alt.github.io/tags/Hexo/"/>
+    
+    <category term="Gitee" scheme="https://duke-alt.github.io/tags/Gitee/"/>
     
   </entry>
   
@@ -63,6 +65,36 @@
     
     
     <category term="Mysql" scheme="https://duke-alt.github.io/tags/Mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>IDEA实现序列化接口Serializable自动生成serialVersionUID</title>
+    <link href="https://duke-alt.github.io/2021/03/08/idea-shi-xian-xu-lie-hua-jie-kou-serializable-zi-dong-sheng-cheng-serialversionuid/"/>
+    <id>https://duke-alt.github.io/2021/03/08/idea-shi-xian-xu-lie-hua-jie-kou-serializable-zi-dong-sheng-cheng-serialversionuid/</id>
+    <published>2021-03-08T08:51:28.000Z</published>
+    <updated>2021-03-08T09:56:43.318Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/2021/03/08/idea-shi-xian-xu-lie-hua-jie-kou-serializable-zi-dong-sheng-cheng-serialversionuid/3.png&quot; alt=&quot;3&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="IDEA" scheme="https://duke-alt.github.io/categories/IDEA/"/>
+    
+    <category term="Java" scheme="https://duke-alt.github.io/categories/IDEA/Java/"/>
+    
+    
+    <category term="IDEA" scheme="https://duke-alt.github.io/tags/IDEA/"/>
+    
+    <category term="Java" scheme="https://duke-alt.github.io/tags/Java/"/>
     
   </entry>
   

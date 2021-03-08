@@ -20,7 +20,9 @@
       
         <tags>
             
-            <tag> Hexo,Gitee </tag>
+            <tag> Hexo </tag>
+            
+            <tag> Gitee </tag>
             
         </tags>
       
@@ -46,6 +48,35 @@
         <tags>
             
             <tag> Mysql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>IDEA实现序列化接口Serializable自动生成serialVersionUID</title>
+      <link href="2021/03/08/idea-shi-xian-xu-lie-hua-jie-kou-serializable-zi-dong-sheng-cheng-serialversionuid/"/>
+      <url>2021/03/08/idea-shi-xian-xu-lie-hua-jie-kou-serializable-zi-dong-sheng-cheng-serialversionuid/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/2021/03/08/idea-shi-xian-xu-lie-hua-jie-kou-serializable-zi-dong-sheng-cheng-serialversionuid/3.png" alt="3"></p><p><img src="/2021/03/08/idea-shi-xian-xu-lie-hua-jie-kou-serializable-zi-dong-sheng-cheng-serialversionuid/4.png" alt="4"></p><p><strong>有些版本的IDEA需要重启，有些不需要 –&gt;鼠标放在实现的类名上，出现黄色提示，点击 –&gt;选择serialVersionUID</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> IDEA </category>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> IDEA </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
