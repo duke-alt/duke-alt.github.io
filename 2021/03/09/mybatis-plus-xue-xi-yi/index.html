@@ -842,6 +842,131 @@ Caused by: java.lang.IllegalArgumentException: argument type mismatch
         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>tablePrefix<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>tbl_<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>bean</span><span class="token punctuation">></span></span>
 </code></pre>
+<h4 id="2-2-3-CRUD所有的测试Demo"><a href="#2-2-3-CRUD所有的测试Demo" class="headerlink" title="2.2.3 CRUD所有的测试Demo"></a>2.2.3 CRUD所有的测试Demo</h4><pre class=" language-java"><code class="language-java"> <span class="token annotation punctuation">@Test</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">testCommonInsert</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Employee employee <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Employee</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        employee<span class="token punctuation">.</span><span class="token function">setEmail</span><span class="token punctuation">(</span><span class="token string">"itcomduke@qq.com"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+       <span class="token comment" spellcheck="true">// employee.setAge(23);</span>
+        <span class="token comment" spellcheck="true">//employee.setGender(0);</span>
+        employee<span class="token punctuation">.</span><span class="token function">setLastName</span><span class="token punctuation">(</span><span class="token string">"duke"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">/*Integer result = employeeMapper.insert(employee);
+        System.out.println(result);*/</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"------------------------------------"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Integer integer <span class="token operator">=</span> employeeMapper<span class="token punctuation">.</span><span class="token function">insertAllColumn</span><span class="token punctuation">(</span>employee<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>integer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"------------------------------------"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Integer key <span class="token operator">=</span> employee<span class="token punctuation">.</span><span class="token function">getId</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"key :"</span> <span class="token operator">+</span> key<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Test</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span>  <span class="token function">testCommonUpdate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        Employee employee <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Employee</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        employee<span class="token punctuation">.</span><span class="token function">setId</span><span class="token punctuation">(</span><span class="token number">13</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        employee<span class="token punctuation">.</span><span class="token function">setLastName</span><span class="token punctuation">(</span><span class="token string">"tom"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        employee<span class="token punctuation">.</span><span class="token function">setEmail</span><span class="token punctuation">(</span><span class="token string">"itcom@163.com"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        employee<span class="token punctuation">.</span><span class="token function">setGender</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        employee<span class="token punctuation">.</span><span class="token function">setAge</span><span class="token punctuation">(</span><span class="token number">22</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+       <span class="token comment" spellcheck="true">// employeeMapper.updateById(employee);</span>
+        Integer integer <span class="token operator">=</span> employeeMapper<span class="token punctuation">.</span><span class="token function">updateAllColumnById</span><span class="token punctuation">(</span>employee<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>integer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Test</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">testCommonSelect</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//Employee employee = employeeMapper.selectById(12);</span>
+
+        <span class="token comment" spellcheck="true">/*Employee employee = new Employee();
+        employee.setAge(22);
+        employee.setLastName("dd");
+        Employee selectOne = employeeMapper.selectOne(employee);
+        System.out.println(selectOne);*/</span>
+
+        <span class="token comment" spellcheck="true">/*ArrayList&lt;Integer> idList = new ArrayList&lt;>();
+        idList.add(1);
+        idList.add(12);
+        List&lt;Employee> employees = employeeMapper.selectBatchIds(idList);
+        System.out.println(employees);*/</span>
+
+        <span class="token comment" spellcheck="true">/*Map&lt;String, Object> columnMap= new HashMap&lt;>();
+        columnMap.put("last_name","duke");
+        columnMap.put("age","23");
+        List&lt;Employee> employees = employeeMapper.selectByMap(columnMap);
+        System.out.println(employees);*/</span>
+        <span class="token comment" spellcheck="true">/**
+         * 物理分页
+         *  mybatis中的 pageHelper
+         *  MP中的插件分页
+         */</span>
+        List<span class="token operator">&lt;</span>Employee<span class="token operator">></span> employees <span class="token operator">=</span> employeeMapper<span class="token punctuation">.</span><span class="token function">selectPage</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Page</span><span class="token operator">&lt;</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">,</span> null<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>employees<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Test</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">testCommonDel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//System.out.println(employeeMapper.deleteById(13));</span>
+
+        <span class="token comment" spellcheck="true">/*ArrayList&lt;Integer> idList = new ArrayList&lt;>();
+        idList.add(12);
+        idList.add(11);
+        employeeMapper.deleteBatchIds(idList);*/</span>
+
+        Map<span class="token operator">&lt;</span>String<span class="token punctuation">,</span> Object<span class="token operator">></span> cloumnMap <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMap</span><span class="token operator">&lt;</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        cloumnMap<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">"last_name"</span><span class="token punctuation">,</span><span class="token string">"duke"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        cloumnMap<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">"age"</span><span class="token punctuation">,</span><span class="token number">23</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        employeeMapper<span class="token punctuation">.</span><span class="token function">deleteByMap</span><span class="token punctuation">(</span>cloumnMap<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</code></pre>
+<h2 id="3-Mp中Sql注入的原理"><a href="#3-Mp中Sql注入的原理" class="headerlink" title="3.Mp中Sql注入的原理"></a>3.Mp中Sql注入的原理</h2><pre class=" language-tex"><code class="language-tex">1. employeeMapper的本质就是 org.apache.ibatis.binding.MapperProxy
+2. MapperProxy中 SqlSession -> sqlSessionFactory
+</code></pre>
+<p><img src="/2021/03/09/mybatis-plus-xue-xi-yi/Snipaste_2021-03-09_14-23-32.png" alt="Snipaste_2021-03-09_14-23-32"></p>
+<pre class=" language-tex"><code class="language-tex">SqlSessionFacotry 中 → Configuration→ MappedStatements每一个  mappedStatement 都表示 Mapper 接口中的一个方法与 Mapper 映射文件中的一个 SQL。
+MP 在启动就会挨个分析 xxxMapper 中的方法，并且将对应的 SQL 语句处理好，保存到 configuration 对象中的 mappedStatements 中
+</code></pre>
+<p><img src="/2021/03/09/mybatis-plus-xue-xi-yi/Snipaste_2021-03-09_14-27-56.png" alt="Snipaste_2021-03-09_14-27-56"></p>
+<p>​        本质: 要去实例化你的bean,调用addMappedStatement,对应的就是BaseMapper里面的方法</p>
+<p><img src="/2021/03/09/mybatis-plus-xue-xi-yi/Snipaste_2021-03-09_14-33-59.png" alt="Snipaste_2021-03-09_14-33-59"></p>
+<pre class=" language-tex"><code class="language-tex">batch:代表是不是一个批量操作
+mapperclass:当前操作的接口对象
+modelclass:就是一个模型,当前实体类对象
+tableInfo:数据库表对应的反射信息 可以获取到表名,cloumn
+</code></pre>
+<p><img src="/2021/03/09/mybatis-plus-xue-xi-yi/Snipaste_2021-03-09_15-14-26.png" alt="Snipaste_2021-03-09_15-14-26"></p>
+<pre class=" language-tex"><code class="language-tex">SqlMethod.DELETE_BY_ID 是一个枚举对象
+    DELETE_BY_ID -> deleteById(这是一个key),简单的描述,构造sql语句的模板
+table.getKeyProperty():获取到他的主键
+
+String.format调用字符串格式化方法
+sqlMethod.getSql():获取sql模板
+table.getTableName():数据库的表名
+table.getKeyColumn():列名 就是一个id
+idStr:主键列
+
+languageDriver.createSqlSource:调用一个语言驱动构造一个sqlSource,拿到一个sqlSource对象(静态sql)
+</code></pre>
+<p><img src="/2021/03/09/mybatis-plus-xue-xi-yi/Snipaste_2021-03-09_15-20-02.png" alt="Snipaste_2021-03-09_15-20-02"></p>
+<p><img src="/2021/03/09/mybatis-plus-xue-xi-yi/Snipaste_2021-03-09_15-27-14.png" alt="Snipaste_2021-03-09_15-27-14"></p>
+<pre class=" language-tex"><code class="language-tex">    再调用addDeleteMappedStatement,将有的数据填进去,没有的写成null
+</code></pre>
+<p><img src="/2021/03/09/mybatis-plus-xue-xi-yi/Snipaste_2021-03-09_15-32-44.png" alt="Snipaste_2021-03-09_15-32-44"></p>
+<pre class=" language-tex"><code class="language-tex">    然后才会进入到addMappedStatement这个方法里面
+</code></pre>
+<p><img src="/2021/03/09/mybatis-plus-xue-xi-yi/Snipaste_2021-03-09_15-34-57.png" alt="Snipaste_2021-03-09_15-34-57"></p>
+<pre class=" language-tex"><code class="language-tex">    拿到接口的名字和方法的名字,进行判断是否为查询
+</code></pre>
+<p><img src="/2021/03/09/mybatis-plus-xue-xi-yi/Snipaste_2021-03-09_15-36-34.png" alt="Snipaste_2021-03-09_15-36-34"></p>
+<pre class=" language-tex"><code class="language-tex">    MapperBuilderAssistant这个对象是用于缓存,sql参数,返回的结果集进行的处理
+</code></pre>
+<p><img src="/2021/03/09/mybatis-plus-xue-xi-yi/Snipaste_2021-03-09_15-39-00.png" alt="Snipaste_2021-03-09_15-39-00"></p>
+<pre class=" language-tex"><code class="language-tex">    进入方法的内部,有一个非常重要的一个方法,里面的sqlSource里面有要执行的sql语句,就知道了sql语句是怎么注入进来的
+</code></pre>
+<p><img src="/2021/03/09/mybatis-plus-xue-xi-yi/Snipaste_2021-03-09_15-41-31.png" alt="Snipaste_2021-03-09_15-41-31"></p>
+<p><img src="/2021/03/09/mybatis-plus-xue-xi-yi/Snipaste_2021-03-09_15-53-55.png" alt="Snipaste_2021-03-09_15-53-55"></p>
+<pre class=" language-tex"><code class="language-tex">employeeMapper-->sqlSession-->sqlSessionFactory-->configuretion-->mappedStatements-->deleteById-->value-->sqlSource-->sql
+</code></pre>
+<p><img src="/2021/03/09/mybatis-plus-xue-xi-yi/Snipaste_2021-03-09_16-07-58.png" alt="Snipaste_2021-03-09_16-07-58"></p>
 
                 
             </div>
