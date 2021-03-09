@@ -6,7 +6,7 @@
   <link href="https://duke-alt.github.io/atom.xml" rel="self"/>
   
   <link href="https://duke-alt.github.io/"/>
-  <updated>2021-03-08T09:28:24.827Z</updated>
+  <updated>2021-03-09T01:44:39.340Z</updated>
   <id>https://duke-alt.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>解决log4j.xml问题http//jakarta.apache.org/log4j/ uri is not registered</title>
+    <link href="https://duke-alt.github.io/2021/03/09/jie-jue-log4j-xml-wen-ti-http-jakarta-apache-org-log4j-uri-is-not-registered/"/>
+    <id>https://duke-alt.github.io/2021/03/09/jie-jue-log4j-xml-wen-ti-http-jakarta-apache-org-log4j-uri-is-not-registered/</id>
+    <published>2021-03-09T01:42:29.000Z</published>
+    <updated>2021-03-09T01:44:39.340Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h5 id=&quot;在IDEA中，配置log4j-xml出现“http-jakarta-apache-org-log4j-uri-is-not-registered”的错误信息。&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="IDEA" scheme="https://duke-alt.github.io/categories/IDEA/"/>
+    
+    <category term="mybatis-plus" scheme="https://duke-alt.github.io/categories/IDEA/mybatis-plus/"/>
+    
+    
+    <category term="IDEA" scheme="https://duke-alt.github.io/tags/IDEA/"/>
+    
+    <category term="mybatis-plus" scheme="https://duke-alt.github.io/tags/mybatis-plus/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo+Gitee博客</title>

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hexo+Gitee博客, Java">
+    <meta name="keywords" content="解决log4j.xml问题http//jakarta.apache.org/log4j/ uri is not registered, Java">
     <meta name="description" content="不浮不躁,惊艳群雄">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hexo+Gitee博客 | 憨憨的二安</title>
+    <title>解决log4j.xml问题http//jakarta.apache.org/log4j/ uri is not registered | 憨憨的二安</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hexo+Gitee博客</h1>
+                    <h1 class="description center-align post-title">解决log4j.xml问题http//jakarta.apache.org/log4j/ uri is not registered</h1>
                 </div>
             </div>
         </div>
@@ -434,12 +434,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Hexo/">
-                                <span class="chip bg-color">Hexo</span>
+                            <a href="/tags/IDEA/">
+                                <span class="chip bg-color">IDEA</span>
                             </a>
                         
-                            <a href="/tags/Gitee/">
-                                <span class="chip bg-color">Gitee</span>
+                            <a href="/tags/mybatis-plus/">
+                                <span class="chip bg-color">mybatis-plus</span>
                             </a>
                         
                     </div>
@@ -450,8 +450,12 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Hexo/" class="post-category">
-                                Hexo
+                            <a href="/categories/IDEA/" class="post-category">
+                                IDEA
+                            </a>
+                        
+                            <a href="/categories/IDEA/mybatis-plus/" class="post-category">
+                                mybatis-plus
                             </a>
                         
                     </div>
@@ -463,7 +467,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-03-08
+                    2021-03-09
                 </div>
                 
 
@@ -484,89 +488,16 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h1><h2 id="安装-Chocolatey"><a href="#安装-Chocolatey" class="headerlink" title="安装 Chocolatey"></a>安装 Chocolatey</h2><p><img src="/2021/03/08/hexo-gitee-bo-ke/image-20210208173003887.png" alt="image-20210208173003887"></p>
-<pre><code>Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+                <h5 id="在IDEA中，配置log4j-xml出现“http-jakarta-apache-org-log4j-uri-is-not-registered”的错误信息。"><a href="#在IDEA中，配置log4j-xml出现“http-jakarta-apache-org-log4j-uri-is-not-registered”的错误信息。" class="headerlink" title="在IDEA中，配置log4j.xml出现“http //jakarta.apache.org/log4j/ uri is not registered”的错误信息。"></a>在IDEA中，配置log4j.xml出现“http //jakarta.apache.org/log4j/ uri is not registered”的错误信息。</h5><h5 id="原始的log4j-xml配置文件："><a href="#原始的log4j-xml配置文件：" class="headerlink" title="原始的log4j.xml配置文件："></a>原始的log4j.xml配置文件：</h5><pre class=" language-xml"><code class="language-xml"><span class="token prolog">&lt;?xml version="1.0" encoding="GB2312" ?></span>
+<span class="token doctype">&lt;!DOCTYPE log4j:configuration SYSTEM "log4j.dtd"></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">log4j:</span>configuration</span> <span class="token attr-name"><span class="token namespace">xmlns:</span>log4j</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://jakarta.apache.org/log4j/<span class="token punctuation">"</span></span>  <span class="token attr-name">debug</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
 </code></pre>
-<p><img src="/2021/03/08/hexo-gitee-bo-ke/image-20210208173418813.png" alt="image-20210208173418813"></p>
-<p>查看是否安装成功：</p>
-<p><img src="/2021/03/08/hexo-gitee-bo-ke/image-20210208173523760.png" alt="image-20210208173523760"></p>
-<h2 id="通过-choco-安装-node-js-和-git"><a href="#通过-choco-安装-node-js-和-git" class="headerlink" title="通过 choco 安装 node.js 和 git"></a>通过 choco 安装 node.js 和 git</h2><pre><code>choco install nodejs --version=12.14.0
+<h5 id="解决方法，详细改动例如以下所看到的"><a href="#解决方法，详细改动例如以下所看到的" class="headerlink" title="解决方法，详细改动例如以下所看到的"></a>解决方法，详细改动例如以下所看到的</h5><pre class=" language-xml"><code class="language-xml"><span class="token prolog">&lt;?xml version="1.0" encoding="GB2312" ?></span>
+<span class="token doctype">&lt;!DOCTYPE log4j:configuration SYSTEM "http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd"></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">log4j:</span>configuration</span> <span class="token attr-name">debug</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
 </code></pre>
-<p><strong>注意：版本不要太高</strong></p>
-<p><img src="/2021/03/08/hexo-gitee-bo-ke/image-20210208174049846.png" alt="image-20210208174049846"></p>
-<pre><code>choco install git
-</code></pre>
-<p><img src="/2021/03/08/hexo-gitee-bo-ke/image-20210208174929211.png" alt="image-20210208174929211"></p>
-<p>测试：</p>
-<p><img src="/2021/03/08/hexo-gitee-bo-ke/image-20210208174908191.png" alt="image-20210208174908191"></p>
-<h2 id="创建-gitee-账号"><a href="#创建-gitee-账号" class="headerlink" title="创建 gitee 账号"></a>创建 gitee 账号<img src="/2021/03/08/hexo-gitee-bo-ke/image-20210208175403063.png" alt="image-20210208175403063"></h2><h2 id="配置-SSH-公钥"><a href="#配置-SSH-公钥" class="headerlink" title="配置 SSH 公钥"></a>配置 SSH 公钥</h2><p>教程：<a target="_blank" rel="noopener" href="https://gitee.com/help/articles/4181">https://gitee.com/help/articles/4181</a></p>
-<p>你可以按如下命令来生成 sshkey:</p>
-<pre><code>ssh-keygen -t rsa -C "xxxxx@xxxxx.com"
-</code></pre>
-<p>按照提示完成三次回车，即可生成 ssh key。通过查看 <code>~/.ssh/id_rsa.pub</code> 文件内容，获取到你的 public key</p>
-<pre><code>cat ~/.ssh/id_rsa.pub
-</code></pre>
-<p><img src="/2021/03/08/hexo-gitee-bo-ke/image-20210208200406079.png" alt="image-20210208200406079"></p>
-<h3 id="将公钥添加到-gitee"><a href="#将公钥添加到-gitee" class="headerlink" title="将公钥添加到 gitee"></a>将公钥添加到 gitee</h3><p><img src="/2021/03/08/hexo-gitee-bo-ke/image-20210208200448756.png" alt="image-20210208200448756"></p>
-<p><img src="/2021/03/08/hexo-gitee-bo-ke/image-20210208200520051.png" alt="image-20210208200520051"></p>
-<h1 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h1><h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><pre><code>npm install hexo-cli -g
-</code></pre>
-<p><img src="/2021/03/08/hexo-gitee-bo-ke/image-20210208180641879.png" alt="image-20210208180641879"></p>
-<h2 id="初始化-Hexo"><a href="#初始化-Hexo" class="headerlink" title="初始化 Hexo"></a>初始化 Hexo</h2><pre><code>hexo init
-</code></pre>
-<p><strong>注意：hexo 模板会安装在命令行所在目录下</strong></p>
-<p><img src="/2021/03/08/hexo-gitee-bo-ke/image-20210208180920711.png" alt="image-20210208180920711"></p>
-<p><img src="/2021/03/08/hexo-gitee-bo-ke/image-20210208180939936.png" alt="image-20210208180939936"></p>
-<p><img src="https://img-blog.csdnimg.cn/20200211135536574.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2N1bmd1ZGFmYQ==,size_1,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="运行-hexo"><a href="#运行-hexo" class="headerlink" title="运行 hexo"></a>运行 hexo</h2><pre><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo s
-</code></pre>
-<p>hexo clean：清空已有的 html 页面<br>hexo g：根据 source_posts 路径下的.md 文件生成新 html 页面<br>hexo s：启动本地服务器，打开<em>localhost:4000</em>可以查看效果</p>
-<p><img src="/2021/03/08/hexo-gitee-bo-ke/image-20210208182507840.png" alt="image-20210208182507840"></p>
-<p><img src="/2021/03/08/hexo-gitee-bo-ke/image-20210208182254781.png" alt="image-20210208182254781"></p>
-<h1 id="Hexo-主题"><a href="#Hexo-主题" class="headerlink" title="Hexo 主题"></a>Hexo 主题</h1><p>hexo 主题大全：<a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes/</a></p>
-<h2 id="hexo-theme-butterfly"><a href="#hexo-theme-butterfly" class="headerlink" title="hexo-theme-butterfly"></a>hexo-theme-butterfly</h2><p>butterfly 是一款我很喜欢的主题，我们用它来演示</p>
-<p>butterfly gitee 仓库：<a target="_blank" rel="noopener" href="https://gitee.com/iamjerryw/hexo-theme-butterfly">https://gitee.com/iamjerryw/hexo-theme-butterfly</a></p>
-<h3 id="下载方式一"><a href="#下载方式一" class="headerlink" title="下载方式一"></a>下载方式一</h3><p><strong>在博客根目录下运行</strong></p>
-<pre><code>npm i hexo-theme-butterfly
-</code></pre>
-<h3 id="方式二"><a href="#方式二" class="headerlink" title="方式二"></a>方式二</h3><p><img src="/2021/03/08/hexo-gitee-bo-ke/image-20210208185016579.png" alt="image-20210208185016579"></p>
-<p><img src="/2021/03/08/hexo-gitee-bo-ke/image-20210208185054161.png" alt="image-20210208185054161"></p>
-<h2 id="应用主题"><a href="#应用主题" class="headerlink" title="应用主题"></a>应用主题</h2><p>修改 hexo 配置文件_config.yml，把主題改為 Butterfly</p>
-<pre><code>theme: butterfly
-</code></pre>
-<p><img src="/2021/03/08/hexo-gitee-bo-ke/image-20210208192815479.png" alt="image-20210208192815479"></p>
-<p>可能会出现的错误：</p>
-<p><img src="/2021/03/08/hexo-gitee-bo-ke/image-20210208190516464.png" alt="image-20210208190516464"></p>
-<p>解决方式：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_44318830/article/details/104884936">https://blog.csdn.net/weixin_44318830/article/details/104884936</a></p>
-<h3 id="运行-hexo-进行预览"><a href="#运行-hexo-进行预览" class="headerlink" title="运行 hexo 进行预览"></a>运行 hexo 进行预览</h3><pre><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo s
-</code></pre>
-<p><img src="/2021/03/08/hexo-gitee-bo-ke/image-20210208192656934.png" alt="image-20210208192656934"></p>
-<p><img src="/2021/03/08/hexo-gitee-bo-ke/image-20210208192727365.png" alt="image-20210208192727365"></p>
-<h2 id="Butterfly主题官方教程"><a href="#Butterfly主题官方教程" class="headerlink" title="Butterfly主题官方教程"></a>Butterfly主题官方教程</h2><p><a target="_blank" rel="noopener" href="https://butterfly.js.org/page/2/">https://butterfly.js.org/page/2/</a></p>
-<p><a target="_blank" rel="noopener" href="https://butterfly.js.org/posts/21cfbf15/#%E5%AE%89%E8%A3%9D">https://butterfly.js.org/posts/21cfbf15/#%E5%AE%89%E8%A3%9D</a></p>
-<p><a target="_blank" rel="noopener" href="https://butterfly.js.org/posts/dc584b87/#Front-matter">https://butterfly.js.org/posts/dc584b87/#Front-matter</a></p>
-<p><a target="_blank" rel="noopener" href="https://butterfly.js.org/posts/4aa8abbe/#Button">https://butterfly.js.org/posts/4aa8abbe/#Button</a></p>
-<p><a target="_blank" rel="noopener" href="https://butterfly.js.org/posts/ceeb73f/#%E5%9C%A8%E7%B6%AB%E8%81%8A%E5%A4%A9">https://butterfly.js.org/posts/ceeb73f/#%E5%9C%A8%E7%B6%AB%E8%81%8A%E5%A4%A9</a></p>
-<p><a target="_blank" rel="noopener" href="https://butterfly.js.org/posts/98d20436/#Cannot-read-property-%E2%80%98appId%E2%80%99-of-undefined">https://butterfly.js.org/posts/98d20436/#Cannot-read-property-%E2%80%98appId%E2%80%99-of-undefined</a></p>
-<p><a target="_blank" rel="noopener" href="https://butterfly.js.org/posts/4073eda/#%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%96%A6">https://butterfly.js.org/posts/4073eda/#%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%96%A6</a></p>
-<p><a target="_blank" rel="noopener" href="https://butterfly.js.org/posts/198a4240/">https://butterfly.js.org/posts/198a4240/</a></p>
-<h1 id="部署到-gitee（码云）"><a href="#部署到-gitee（码云）" class="headerlink" title="部署到 gitee（码云）"></a>部署到 gitee（码云）</h1><h2 id="新建仓库"><a href="#新建仓库" class="headerlink" title="新建仓库"></a>新建仓库</h2><p><img src="/2021/03/08/hexo-gitee-bo-ke/image-20210208175919208.png" alt="image-20210208175919208"></p>
-<h2 id="开通-Gitee-Pages-服务"><a href="#开通-Gitee-Pages-服务" class="headerlink" title="开通 Gitee Pages 服务"></a>开通 Gitee Pages 服务</h2><p><img src="/2021/03/08/hexo-gitee-bo-ke/image-20210209004251786.png" alt="image-20210209004251786"><br><img src="/2021/03/08/hexo-gitee-bo-ke/image-20210209004458150.png" alt="image-20210209004458150">!</p>
-<h3 id="获取并设置仓库地址"><a href="#获取并设置仓库地址" class="headerlink" title="获取并设置仓库地址"></a>获取并设置仓库地址</h3><pre><code>deploy:
-  type: git
-  repository: git@gitee.com:XXX-XXX/blog.git
-  branch: master
-</code></pre>
-<p><img src="/2021/03/08/hexo-gitee-bo-ke/image-20210209003443184.png" alt="image-20210209003443184"></p>
-<pre><code>url: http://lai-lai.gitee.io
-root: /blog
-</code></pre>
-<p><img src="/2021/03/08/hexo-gitee-bo-ke/image-20210209003731313.png" alt="image-20210209003731313"></p>
-<h3 id="部署博客"><a href="#部署博客" class="headerlink" title="部署博客"></a>部署博客</h3><pre><code>hexo d
-</code></pre>
-<p><img src="/2021/03/08/hexo-gitee-bo-ke/image-20210209004056694.png" alt="image-20210209004056694"></p>
-<p><img src="/2021/03/08/hexo-gitee-bo-ke/image-20210209004735937.png" alt="image-20210209004735937"></p>
-<h1 id="完结撒花"><a href="#完结撒花" class="headerlink" title="完结撒花"></a>完结撒花</h1><p><img src="/2021/03/08/hexo-gitee-bo-ke/image-20210209005647965.png" alt="image-20210209005647965"></p>
 
                 
             </div>
@@ -593,7 +524,7 @@ root: /blog
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://duke-alt.github.io/2021/03/08/hexo-gitee-bo-ke/">https://duke-alt.github.io/2021/03/08/hexo-gitee-bo-ke/</a>
+                    <a href="https://duke-alt.github.io/2021/03/09/jie-jue-log4j-xml-wen-ti-http-jakarta-apache-org-log4j-uri-is-not-registered/">https://duke-alt.github.io/2021/03/09/jie-jue-log4j-xml-wen-ti-http-jakarta-apache-org-log4j-uri-is-not-registered/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -631,12 +562,12 @@ root: /blog
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Hexo/">
-                                    <span class="chip bg-color">Hexo</span>
+                                <a href="/tags/IDEA/">
+                                    <span class="chip bg-color">IDEA</span>
                                 </a>
                             
-                                <a href="/tags/Gitee/">
-                                    <span class="chip bg-color">Gitee</span>
+                                <a href="/tags/mybatis-plus/">
+                                    <span class="chip bg-color">mybatis-plus</span>
                                 </a>
                             
                         </div>
@@ -808,9 +739,10 @@ root: /blog
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/03/09/jie-jue-log4j-xml-wen-ti-http-jakarta-apache-org-log4j-uri-is-not-registered/">
                     <div class="card-image">
@@ -828,9 +760,9 @@ root: /blog
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-09
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-09
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -847,6 +779,7 @@ root: /blog
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -869,13 +802,13 @@ root: /blog
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/03/08/idea-shi-xian-xu-lie-hua-jie-kou-serializable-zi-dong-sheng-cheng-serialversionuid/">
+                <a href="/2021/03/08/hexo-gitee-bo-ke/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="IDEA实现序列化接口Serializable自动生成serialVersionUID">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="Hexo+Gitee博客">
                         
-                        <span class="card-title">IDEA实现序列化接口Serializable自动生成serialVersionUID</span>
+                        <span class="card-title">Hexo+Gitee博客</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -892,8 +825,8 @@ root: /blog
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/IDEA/" class="post-category">
-                                    IDEA
+                            <a href="/categories/Hexo/" class="post-category">
+                                    Hexo
                                 </a>
                             
                             
@@ -903,8 +836,12 @@ root: /blog
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/IDEA/">
-                        <span class="chip bg-color">IDEA</span>
+                    <a href="/tags/Hexo/">
+                        <span class="chip bg-color">Hexo</span>
+                    </a>
+                    
+                    <a href="/tags/Gitee/">
+                        <span class="chip bg-color">Gitee</span>
                     </a>
                     
                 </div>

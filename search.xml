@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>解决log4j.xml问题http//jakarta.apache.org/log4j/ uri is not registered</title>
+      <link href="2021/03/09/jie-jue-log4j-xml-wen-ti-http-jakarta-apache-org-log4j-uri-is-not-registered/"/>
+      <url>2021/03/09/jie-jue-log4j-xml-wen-ti-http-jakarta-apache-org-log4j-uri-is-not-registered/</url>
+      
+        <content type="html"><![CDATA[<h5 id="在IDEA中，配置log4j-xml出现“http-jakarta-apache-org-log4j-uri-is-not-registered”的错误信息。"><a href="#在IDEA中，配置log4j-xml出现“http-jakarta-apache-org-log4j-uri-is-not-registered”的错误信息。" class="headerlink" title="在IDEA中，配置log4j.xml出现“http //jakarta.apache.org/log4j/ uri is not registered”的错误信息。"></a>在IDEA中，配置log4j.xml出现“http //jakarta.apache.org/log4j/ uri is not registered”的错误信息。</h5><h5 id="原始的log4j-xml配置文件："><a href="#原始的log4j-xml配置文件：" class="headerlink" title="原始的log4j.xml配置文件："></a>原始的log4j.xml配置文件：</h5><pre class=" language-xml"><code class="language-xml"><span class="token prolog">&lt;?xml version="1.0" encoding="GB2312" ?></span><span class="token doctype">&lt;!DOCTYPE log4j:configuration SYSTEM "log4j.dtd"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">log4j:</span>configuration</span> <span class="token attr-name"><span class="token namespace">xmlns:</span>log4j</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://jakarta.apache.org/log4j/<span class="token punctuation">"</span></span>  <span class="token attr-name">debug</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></code></pre><h5 id="解决方法，详细改动例如以下所看到的"><a href="#解决方法，详细改动例如以下所看到的" class="headerlink" title="解决方法，详细改动例如以下所看到的"></a>解决方法，详细改动例如以下所看到的</h5><pre class=" language-xml"><code class="language-xml"><span class="token prolog">&lt;?xml version="1.0" encoding="GB2312" ?></span><span class="token doctype">&lt;!DOCTYPE log4j:configuration SYSTEM "http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">log4j:</span>configuration</span> <span class="token attr-name">debug</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> IDEA </category>
+          
+          <category> mybatis-plus </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> IDEA </tag>
+            
+            <tag> mybatis-plus </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo+Gitee博客</title>
       <link href="2021/03/08/hexo-gitee-bo-ke/"/>
       <url>2021/03/08/hexo-gitee-bo-ke/</url>
