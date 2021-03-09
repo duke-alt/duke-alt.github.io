@@ -6,7 +6,7 @@
   <link href="https://duke-alt.github.io/atom.xml" rel="self"/>
   
   <link href="https://duke-alt.github.io/"/>
-  <updated>2021-03-09T01:44:39.340Z</updated>
+  <updated>2021-03-09T03:43:05.227Z</updated>
   <id>https://duke-alt.github.io/</id>
   
   <author>
@@ -17,11 +17,45 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>mybatis-plus学习(一)</title>
+    <link href="https://duke-alt.github.io/2021/03/09/mybatis-plus-xue-xi-yi/"/>
+    <id>https://duke-alt.github.io/2021/03/09/mybatis-plus-xue-xi-yi/</id>
+    <published>2021-03-09T02:03:59.000Z</published>
+    <updated>2021-03-09T03:43:05.227Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;​    &lt;strong&gt;MyBatis-Plus(简称MP),是一个MyBatis的一个增强工具包,只做增强不做改变,为简化开发工作,提高生产率而生&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-基础环境搭建&quot;&gt;&lt;a href=&quot;#1-基础环境搭建&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://duke-alt.github.io/categories/Java/"/>
+    
+    <category term="mybatis-plus" scheme="https://duke-alt.github.io/categories/Java/mybatis-plus/"/>
+    
+    <category term="Java" scheme="https://duke-alt.github.io/categories/Java/mybatis-plus/Java/"/>
+    
+    
+    <category term="IDEA" scheme="https://duke-alt.github.io/tags/IDEA/"/>
+    
+    <category term="Java" scheme="https://duke-alt.github.io/tags/Java/"/>
+    
+    <category term="mybatis-plus" scheme="https://duke-alt.github.io/tags/mybatis-plus/"/>
+    
+  </entry>
+  
+  <entry>
     <title>解决log4j.xml问题http//jakarta.apache.org/log4j/ uri is not registered</title>
     <link href="https://duke-alt.github.io/2021/03/09/jie-jue-log4j-xml-wen-ti-http-jakarta-apache-org-log4j-uri-is-not-registered/"/>
     <id>https://duke-alt.github.io/2021/03/09/jie-jue-log4j-xml-wen-ti-http-jakarta-apache-org-log4j-uri-is-not-registered/</id>
     <published>2021-03-09T01:42:29.000Z</published>
-    <updated>2021-03-09T01:44:39.340Z</updated>
+    <updated>2021-03-09T02:29:47.457Z</updated>
     
     
       
@@ -38,8 +72,12 @@
     
     <category term="mybatis-plus" scheme="https://duke-alt.github.io/categories/IDEA/mybatis-plus/"/>
     
+    <category term="Java" scheme="https://duke-alt.github.io/categories/IDEA/mybatis-plus/Java/"/>
+    
     
     <category term="IDEA" scheme="https://duke-alt.github.io/tags/IDEA/"/>
+    
+    <category term="Java" scheme="https://duke-alt.github.io/tags/Java/"/>
     
     <category term="mybatis-plus" scheme="https://duke-alt.github.io/tags/mybatis-plus/"/>
     
